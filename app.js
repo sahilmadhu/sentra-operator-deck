@@ -1,7 +1,7 @@
 class SentraDeck {
   constructor() {
     this.currentSlide = 1;
-    this.totalSlides = 19;
+    this.totalSlides = 17;
     this.slides = document.querySelectorAll('.slide');
     this.isAnimating = false;
     
