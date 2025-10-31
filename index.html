@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sentra - AI-Powered Safety Intelligence Platform</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Progress bar -->
+    <div class="progress-bar">
+        <div class="progress-fill" id="progressFill"></div>
+    </div>
+
+    <!-- Slide counter -->
+    <div class="slide-counter" id="slideCounter">
+        <span id="currentSlide">1</span> / <span id="totalSlides">20</span>
+    </div>
+
+    <!-- Navigation arrows -->
+    <button class="nav-arrow nav-arrow--left" id="prevBtn" aria-label="Previous slide">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+    </button>
+    <button class="nav-arrow nav-arrow--right" id="nextBtn" aria-label="Next slide">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+    </button>
+
+    <!-- Main slide container -->
+    <div class="slide-container" id="slideContainer">
+        <!-- Slide 1: Cover -->
+        <div class="slide slide--cover active" data-slide="1">
+            <div class="slide__content">
+                <div class="cover__logo animate-fade-up">
+                    <h1 class="cover__title">SENTRA</h1>
+                    <p class="cover__subtitle">AI-Powered Safety Intelligence Platform</p>
+                </div>
+                <div class="cover__tagline animate-fade-up delay-2">
+                    <p>Seed Stage Investor Deck</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 2: Vision -->
+        <div class="slide" data-slide="2">
+            <div class="slide__content">
+                <h2 class="slide__title animate-fade-up">Vision</h2>
+                <h3 class="slide__headline animate-fade-up delay-1">Making Every Camera a Safety Sensor</h3>
+                <p class="slide__text animate-fade-up delay-2">Transforming passive surveillance into active risk reduction through AI-powered compliance monitoring</p>
+                <div class="vision__icon animate-fade-up delay-3">
+                    <div class="icon-flow">
+                        <div class="icon-item">📹</div>
+                        <div class="icon-arrow">→</div>
+                        <div class="icon-item">🧠</div>
+                        <div class="icon-arrow">→</div>
+                        <div class="icon-item">🛡️</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 3: The Problem -->
+        <div class="slide" data-slide="3">
+            <div class="slide__content">
+                <h2 class="slide__title animate-fade-up">The Problem</h2>
+                <div class="problem-grid">
+                    <div class="problem-card animate-fade-up delay-1">
+                        <h3>For Enterprises</h3>
+                        <p>Manual safety monitoring is expensive, inconsistent, and impossible to audit at scale</p>
+                    </div>
+                    <div class="problem-card animate-fade-up delay-2">
+                        <h3>For Insurers</h3>
+                        <p>$100B+ annual workplace incident claims with no real-time risk data</p>
+                    </div>
+                    <div class="problem-card animate-fade-up delay-3">
+                        <h3>For Regulators</h3>
+                        <p>Limited inspection capacity and no digital compliance trails</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 4: The Solution -->
+        <div class="slide" data-slide="4">
+            <div class="slide__content">
+                <h2 class="slide__title animate-fade-up">The Solution</h2>
+                <h3 class="slide__headline animate-fade-up delay-1">AI-Powered PPE Compliance + Insurer-Backed Distribution</h3>
+                <div class="solution-features animate-fade-up delay-2">
+                    <div class="feature-item">✓ Real-time detection of safety violations</div>
+                    <div class="feature-item">✓ Automated compliance reporting</div>
+                    <div class="feature-item">✓ Insurance premium savings that offset costs</div>
+                </div>
+                <div class="solution-flow animate-fade-up delay-3">
+                    <div class="flow-item">📹<br><span>Camera</span></div>
+                    <div class="flow-arrow">→</div>
+                    <div class="flow-item">🤖<br><span>AI</span></div>
+                    <div class="flow-arrow">→</div>
+                    <div class="flow-item">📊<br><span>Dashboard</span></div>
+                    <div class="flow-arrow">→</div>
+                    <div class="flow-item">💰<br><span>Savings</span></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 5: Market Opportunity -->
+        <div class="slide" data-slide="5">
+            <div class="slide__content">
+                <h2 class="slide__title animate-fade-up">Market Opportunity</h2>
+                <div class="market-stats">
+                    <div class="stat-item animate-fade-up delay-1">
+                        <div class="stat-number">$50B+</div>
+                        <div class="stat-label">Workplace Safety Market</div>
+                        <div class="stat-detail">by 2030</div>
+                    </div>
+                    <div class="stat-item animate-fade-up delay-2">
+                        <div class="stat-number">$12B+</div>
+                        <div class="stat-label">Video Analytics for Safety</div>
+                        <div class="stat-detail">by 2030</div>
+                    </div>
+                    <div class="stat-item animate-fade-up delay-3">
+                        <div class="stat-number">20%</div>
+                        <div class="stat-label">Annual Growth Rate</div>
+                        <div class="stat-detail">CAGR</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 6: The Wedge -->
+        <div class="slide" data-slide="6">
+            <div class="slide__content">
+                <h2 class="slide__title animate-fade-up">The Wedge: Insurer-First Strategy</h2>
+                <div class="comparison-grid">
+                    <div class="comparison-column animate-fade-up delay-1">
+                        <h3>Traditional Sales</h3>
+                        <ul class="comparison-list">
+                            <li>6-18 month sales cycles</li>
+                            <li>Budget battles with unclear ROI</li>
+                            <li>Change management resistance</li>
+                        </ul>
+                    </div>
+                    <div class="comparison-vs animate-fade-up delay-2">VS</div>
+                    <div class="comparison-column comparison-column--highlight animate-fade-up delay-3">
+                        <h3>Sentra Approach</h3>
+                        <ul class="comparison-list">
+                            <li>Insurer co-marketing</li>
+                            <li>Premium reductions offset costs</li>
+                            <li>Measurable claim reduction</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 7: Product Capabilities -->
+        <div class="slide" data-slide="7">
+            <div class="slide__content">
+                <h2 class="slide__title animate-fade-up">Product Capabilities</h2>
+                <div class="capabilities-grid">
+                    <div class="capability-card animate-fade-up delay-1">
+                        <div class="capability-icon">🦺</div>
+                        <h3>PPE Detection</h3>
+                        <p>Helmets, vests, masks, gloves</p>
+                    </div>
+                    <div class="capability-card animate-fade-up delay-2">
+                        <div class="capability-icon">🚨</div>
+                        <h3>Real-time Alerts</h3>
+                        <p>SMS, WhatsApp, mobile app</p>
+                    </div>
+                    <div class="capability-card animate-fade-up delay-3">
+                        <div class="capability-icon">📊</div>
+                        <h3>Compliance Dashboards</h3>
+                        <p>Live monitoring and trends</p>
+                    </div>
+                    <div class="capability-card animate-fade-up delay-4">
+                        <div class="capability-icon">📋</div>
+                        <h3>Insurer Reporting</h3>
+                        <p>Premium adjustment ready</p>
+                    </div>
+                    <div class="capability-card animate-fade-up delay-5">
+                        <div class="capability-icon">🔒</div>
+                        <h3>Privacy-by-Design</h3>
+                        <p>GDPR compliant, edge processing</p>
+                    </div>
+                    <div class="capability-card animate-fade-up delay-6">
+                        <div class="capability-icon">🔗</div>
+                        <h3>IoT Integration</h3>
+                        <p>Sensors, wearables (roadmap)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 8: Target Customers -->
+        <div class="slide" data-slide="8">
+            <div class="slide__content">
+                <h2 class="slide__title animate-fade-up">Target Customers</h2>
+                <div class="customers-grid">
+                    <div class="customer-item animate-fade-up delay-1">
+                        <div class="customer-icon">🏭</div>
+                        <h3>Manufacturing</h3>
+                    </div>
+                    <div class="customer-item animate-fade-up delay-2">
+                        <div class="customer-icon">🏗️</div>
+                        <h3>Construction &amp; Infrastructure</h3>
+                    </div>
+                    <div class="customer-item animate-fade-up delay-3">
+                        <div class="customer-icon">📦</div>
+                        <h3>Logistics &amp; Warehousing</h3>
+                    </div>
+                    <div class="customer-item animate-fade-up delay-4">
+                        <div class="customer-icon">🏛️</div>
+                        <h3>Government/PSUs</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 9: Go-to-Market Strategy -->
+        <div class="slide" data-slide="9">
+            <div class="slide__content">
+                <h2 class="slide__title animate-fade-up">Go-to-Market Strategy</h2>
+                <div class="gtm-timeline">
+                    <div class="gtm-step animate-fade-up delay-1">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h3>Partner with Insurers</h3>
+                            <p>Co-develop premium reduction frameworks</p>
+                        </div>
+                    </div>
+                    <div class="gtm-step animate-fade-up delay-2">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h3>Co-Market to Enterprises</h3>
+                            <p>Leverage insurer relationships</p>
+                        </div>
+                    </div>
+                    <div class="gtm-step animate-fade-up delay-3">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h3>Scale Through ROI</h3>
+                            <p>Verified claim reduction drives growth</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 10: Competitive Landscape -->
+        <div class="slide" data-slide="10">
+            <div class="slide__content">
+                <h2 class="slide__title animate-fade-up">Competitive Landscape</h2>
+                <div class="competitive-table animate-fade-up delay-1">
+                    <div class="comp-row comp-header">
+                        <div class="comp-cell">Company</div>
+                        <div class="comp-cell">Strength</div>
+                        <div class="comp-cell">Weakness</div>
+                    </div>
+                    <div class="comp-row">
+                        <div class="comp-cell"><strong>Intenseye</strong></div>
+                        <div class="comp-cell">AI safety leader</div>
+                        <div class="comp-cell">No insurer wedge</div>
+                    </div>
+                    <div class="comp-row">
+                        <div class="comp-cell"><strong>Voxel</strong></div>
+                        <div class="comp-cell">Strong product</div>
+                        <div class="comp-cell">Direct enterprise sales</div>
+                    </div>
+                    <div class="comp-row comp-highlight">
+                        <div class="comp-cell"><strong>Sentra</strong></div>
+                        <div class="comp-cell">Insurer-first distribution</div>
+                        <div class="comp-cell">Early stage</div>
+                    </div>
+                </div>
+                <p class="competitive-note animate-fade-up delay-2">Only platform with insurer-backed distribution</p>
+            </div>
+        </div>
+
+        <!-- Slide 11: Business Model -->
+        <div class="slide" data-slide="11">
+            <div class="slide__content">
+                <h2 class="slide__title animate-fade-up">Business Model</h2>
+                <div class="revenue-streams">
+                    <div class="revenue-item animate-fade-up delay-1">
+                        <h3>SaaS Subscription</h3>
+                        <p>Per camera/site monthly fee</p>
+                    </div>
+                    <div class="revenue-item animate-fade-up delay-2">
+                        <h3>Enterprise Contracts</h3>
+                        <p>Annual agreements with insurers</p>
+                    </div>
+                    <div class="revenue-item animate-fade-up delay-3">
+                        <h3>IoT Add-ons</h3>
+                        <p>Sensor integration modules</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 12: Financial Projections -->
+        <div class="slide" data-slide="12">
+            <div class="slide__content">
+                <h2 class="slide__title animate-fade-up">Financial Projections</h2>
+                <div class="projections-chart">
+                    <div class="projection-item animate-fade-up delay-1">
+                        <div class="projection-year">Year 1</div>
+                        <div class="projection-customers">15 customers</div>
+                        <div class="projection-arr">₹1.2Cr ARR</div>
+                    </div>
+                    <div class="projection-item animate-fade-up delay-2">
+                        <div class="projection-year">Year 3</div>
+                        <div class="projection-customers">200 customers</div>
+                        <div class="projection-arr">₹22Cr ARR</div>
+                    </div>
+                    <div class="projection-item animate-fade-up delay-3">
+                        <div class="projection-year">Year 5</div>
+                        <div class="projection-customers">800 customers</div>
+                        <div class="projection-arr">₹112Cr ARR</div>
+                    </div>
+                </div>
+                <p class="breakeven-note animate-fade-up delay-4">Break-even: Year 3</p>
+            </div>
+        </div>
+
+        <!-- Slide 13: Funding & Use of Funds -->
+        <div class="slide" data-slide="13">
+            <div class="slide__content">
+                <h2 class="slide__title animate-fade-up">Funding &amp; Use of Funds</h2>
+                <div class="funding-amount animate-fade-up delay-1">
+                    <h3>Seed Round: ₹2-4 Crores</h3>
+                </div>
+                <div class="funding-allocation">
+                    <div class="allocation-item animate-fade-up delay-2">
+                        <div class="allocation-bar" style="width: 35%; background: #F97316;"></div>
+                        <div class="allocation-label">AI Development - 35%</div>
+                    </div>
+                    <div class="allocation-item animate-fade-up delay-3">
+                        <div class="allocation-bar" style="width: 25%; background: #0A2463;"></div>
+                        <div class="allocation-label">Pilot Deployments - 25%</div>
+                    </div>
+                    <div class="allocation-item animate-fade-up delay-4">
+                        <div class="allocation-bar" style="width: 25%; background: #1E3A8A;"></div>
+                        <div class="allocation-label">Team - 25%</div>
+                    </div>
+                    <div class="allocation-item animate-fade-up delay-5">
+                        <div class="allocation-bar" style="width: 15%; background: #FB923C;"></div>
+                        <div class="allocation-label">Regulatory/Legal - 15%</div>
+                    </div>
+                </div>
+                <p class="runway-note animate-fade-up delay-6">18-month runway to Series A</p>
+            </div>
+        </div>
+
+        <!-- Slide 14: Team & Advisors -->
+        <div class="slide" data-slide="14">
+            <div class="slide__content">
+                <h2 class="slide__title animate-fade-up">Team &amp; Advisors</h2>
+                <div class="team-description animate-fade-up delay-1">
+                    <h3>Experienced Founding Team</h3>
+                    <p>Expertise in AI/ML, enterprise software, and industrial operations</p>
+                </div>
+                <div class="expertise-grid">
+                    <div class="expertise-item animate-fade-up delay-2">AI/ML Engineering</div>
+                    <div class="expertise-item animate-fade-up delay-3">Enterprise Software</div>
+                    <div class="expertise-item animate-fade-up delay-4">Industrial Operations</div>
+                    <div class="expertise-item animate-fade-up delay-5">Insurance Domain</div>
+                </div>
+                <div class="advisors-note animate-fade-up delay-6">
+                    <p><strong>Advisory Network:</strong> Insurance executives, EHS leaders, compliance experts, computer vision researchers</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 15: Traction & Validation -->
+        <div class="slide" data-slide="15">
+            <div class="slide__content">
+                <h2 class="slide__title animate-fade-up">Traction &amp; Validation</h2>
+                <div class="traction-points">
+                    <div class="traction-item animate-fade-up delay-1">
+                        <div class="traction-icon">🤝</div>
+                        <p>Strong insurer interest in pilot partnerships</p>
+                    </div>
+                    <div class="traction-item animate-fade-up delay-2">
+                        <div class="traction-icon">✅</div>
+                        <p>Positive enterprise feedback on value proposition</p>
+                    </div>
+                    <div class="traction-item animate-fade-up delay-3">
+                        <div class="traction-icon">💰</div>
+                        <p>Competitor funding validates category (Intenseye $64M Series B)</p>
+                    </div>
+                    <div class="traction-item animate-fade-up delay-4">
+                        <div class="traction-icon">🏛️</div>
+                        <p>Regulatory alignment confirmed with government agencies</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 16: Key Milestones -->
+        <div class="slide" data-slide="16">
+            <div class="slide__content">
+                <h2 class="slide__title animate-fade-up">Key Milestones</h2>
+                <div class="milestones-timeline">
+                    <div class="milestone-item animate-fade-up delay-1">
+                        <div class="milestone-month">Month 3</div>
+                        <div class="milestone-desc">MVP Launch</div>
+                    </div>
+                    <div class="milestone-item animate-fade-up delay-2">
+                        <div class="milestone-month">Month 6</div>
+                        <div class="milestone-desc">First Insurer Partnership</div>
+                    </div>
+                    <div class="milestone-item animate-fade-up delay-3">
+                        <div class="milestone-month">Month 12</div>
+                        <div class="milestone-desc">15 Enterprise Customers</div>
+                    </div>
+                    <div class="milestone-item animate-fade-up delay-4">
+                        <div class="milestone-month">Month 18</div>
+                        <div class="milestone-desc">Series A Readiness</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 17: Why Now -->
+        <div class="slide" data-slide="17">
+            <div class="slide__content">
+                <h2 class="slide__title animate-fade-up">Why Now?</h2>
+                <div class="trends-grid">
+                    <div class="trend-item animate-fade-up delay-1">
+                        <h3>AI Maturity</h3>
+                        <p>Computer vision achieving production-ready accuracy</p>
+                    </div>
+                    <div class="trend-item animate-fade-up delay-2">
+                        <h3>Regulatory Pressure</h3>
+                        <p>OSHA, EU-OSHA mandating digital compliance</p>
+                    </div>
+                    <div class="trend-item animate-fade-up delay-3">
+                        <h3>Insurer Digitization</h3>
+                        <p>Carriers seeking data-driven risk assessment</p>
+                    </div>
+                </div>
+                <div class="tagline animate-fade-up delay-4">
+                    <p>Once-in-a-decade opportunity at the intersection of AI, insurance, and industrial safety</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 18: The Ask -->
+        <div class="slide" data-slide="18">
+            <div class="slide__content">
+                <h2 class="slide__title animate-fade-up">The Ask</h2>
+                <div class="ask-amount animate-fade-up delay-1">
+                    <h3>₹2-4 Crores Seed Round</h3>
+                </div>
+                <div class="ask-points">
+                    <div class="ask-item animate-fade-up delay-2">
+                        <p>Join us in building the global standard for industrial safety</p>
+                    </div>
+                    <div class="ask-item animate-fade-up delay-3">
+                        <p>Strategic partnerships welcomed (camera manufacturers, insurers, ecosystem players)</p>
+                    </div>
+                    <div class="ask-item animate-fade-up delay-4">
+                        <p>Closing Q4 2025</p>
+                    </div>
+                </div>
+                <div class="cta animate-fade-up delay-5">
+                    <h3>Let's transform workplace safety together</h3>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 19: Contact -->
+        <div class="slide slide--contact" data-slide="19">
+            <div class="slide__content">
+                <div class="contact-message animate-fade-up">
+                    <h2>Let's make workplaces safer together</h2>
+                </div>
+                <div class="contact-info animate-fade-up delay-1">
+                    <p class="contact-email">founders@sentra.ai</p>
+                </div>
+                <div class="contact-tagline animate-fade-up delay-2">
+                    <p>Thank you for your time</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide indicators -->
+    <div class="slide-indicators" id="slideIndicators">
+        <!-- Generated by JavaScript -->
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
